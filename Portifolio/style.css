@@ -11,6 +11,14 @@ body{
     font-family: 'Courier New', Courier, monospace;
     background-color: gray;
 }
+:root {
+    --cor1: #F2055C;
+    --cor2: #161C26;
+    --cor3: #3868A6;
+    --cor4: #A2F2F2;
+    --cor5: #05F2DBed;
+    --cor6: red;
+}
 
 /* HEADER */
 
@@ -108,4 +116,8 @@ ul>li>a>img{
     transform: translateX(0px);
     position: relative ;
     z-index: initial;
+}
+
+.info{
+
 }
