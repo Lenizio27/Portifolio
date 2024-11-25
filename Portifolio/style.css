@@ -9,12 +9,13 @@ html{
 
 body{
     font-family: 'Courier New', Courier, monospace;
-    background-color: gray;
+    background-color: var(--cor3);
+    color: white;
 }
 :root {
     --cor1: #F2055C;
     --cor2: #161C26;
-    --cor3: #3868A6;
+    --cor3: #091625;
     --cor4: #A2F2F2;
     --cor5: #05F2DBed;
     --cor6: red;
@@ -55,6 +56,17 @@ body{
     
 }
 
+#home > nav > div {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+#home > nav > div a{
+    color: var(--cor3);
+    text-decoration: none;
+    padding: 5px;
+}
+
 /* MAIN */
 
 main{
@@ -80,7 +92,7 @@ ul>li{
     list-style: none;
     margin: 10px 5px;
     padding: 5px;
-    border: 2px solid black;
+    border: 2px solid var(--cor4);
     border-radius: 50%;
 }
 
@@ -90,7 +102,8 @@ ul>li>a{
 }
 
 ul>li>a>img{
-    height: 45px;
+    margin: 5px;
+    height: 35px;
 }
 
 .scroll-smooth{
@@ -118,6 +131,6 @@ ul>li>a>img{
     z-index: initial;
 }
 
-.info{
-
+.info > .box-info > h1{
+    font-size: 40px;
 }
