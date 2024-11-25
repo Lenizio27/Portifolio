@@ -14,13 +14,14 @@ body{
 
 /* HEADER */
 
-header{
+#cabecalho{
     display: flex;
-    position: fixed;
     align-items: center;
+    position: fixed;
     height: 90px;
     width: 100%;
     backdrop-filter: blur(3px);
+    z-index: 10;
 }
 
 #home{
@@ -62,9 +63,6 @@ main{
     align-items: center;
     justify-content: center;
 }
-.me{
-    padding-left: 20px;
-}
 
 ul{
     display: flex;
@@ -89,19 +87,25 @@ ul>li>a>img{
 
 .scroll-smooth{
     opacity: 0;
-    transition:all 1s;
-    transform: translateX(-100%);
+    transition:all 1.5s;
+    filter: blur(15px);
+    transform: translateX(-300px);
 
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin: 2px 0px;
+    margin: 1px 0px;
+    padding-left: 20px;
+    position:relative;
 }
 
 .show{
     opacity: 1;
-    transition:all 1s;
-    transform: translateX(0);
+    filter: blur(0);
+    transition:all 1.5s;
+    transform: translateX(0px);
+    position: relative ;
+    z-index: initial;
 }
