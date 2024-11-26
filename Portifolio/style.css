@@ -21,6 +21,8 @@ body{
     --cor6: red;
 }
 
+
+
 /* HEADER */
 
 #cabecalho{
@@ -77,6 +79,13 @@ body{
     padding: 5px;
     color: black;
     font-weight: 900;
+}
+
+@media (width < 800px){
+    #cabecalho > #home {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* MAIN */
@@ -150,4 +159,15 @@ ul>li>a>img{
 
 .info > .box-info > h1{
     font-size: 40px;
+}
+
+@media (width < 700px){
+    .info{
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    .info > div > img{
+        opacity: 0;
+    }2724
 }
