@@ -163,11 +163,28 @@ ul>li>a>img{
 
 @media (width < 700px){
     .info{
-        padding-top: 200px;
         display: flex;
         flex-direction: column;
+        height: 100vh;
+        text-align: center;
+        align-items: ;
+        justify-content: center;
     }
-    .info > div > img{
-        opacity: 0;
-    }2724
+    .scroll-smooth{
+        width: auto;
+        padding-left: 0;
+    }
+    .box-info{
+        width: 100%;
+    }
+    .box-info > ul{
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+    }
+    :last-child.box-info{
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
 }
