@@ -82,9 +82,16 @@ body{
 }
 
 @media (width < 800px){
+    #cabecalho{
+        height: 180px;
+    }
     #cabecalho > #home {
         display: flex;
+        height: 90px;
         flex-direction: column;
+    }
+    #home >  {
+        z-index: 6;
     }
 }
 
@@ -161,13 +168,18 @@ ul>li>a>img{
     font-size: 40px;
 }
 
+#sobre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 @media (width < 700px){
     .info{
         display: flex;
         flex-direction: column;
         height: 100vh;
         text-align: center;
-        align-items: ;
         justify-content: center;
     }
     .scroll-smooth{
